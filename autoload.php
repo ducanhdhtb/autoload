@@ -4,14 +4,15 @@
         //class directories
         $directorys = array(
             'classes/',
-            'classes/otherclasses/',
-            'classes2/',
+            'otherclasses/',
+            'App/Controller/',
             'module1/classes/'
         );
         
         //for each directory
         foreach($directorys as $directory)
         {
+        /*	$class_name=str_replace("\\","/",$class_name);*/
             //see if the file exsists
             if(file_exists($directory.$class_name . '.php'))
             {
